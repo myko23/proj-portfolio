@@ -1,0 +1,66 @@
+@use "../../styles" as *;
+
+.Techstack {
+	@include displayFlex(column);
+	align-items: center;
+	margin-top: 4rem;
+}
+.Techstack__item-list {
+	.Techstack__item-container {
+		@include displayFlex(row, center);
+		position: relative;
+		cursor: pointer;
+
+		.Techstack__item-pin {
+			@include boxSize(5rem, true);
+			background-color: orange;
+			position: absolute;
+			z-index: 5;
+			top: 1rem;
+
+			transition: all 0.1s ease-in-out;
+		}
+
+		.Techstack__item {
+			@include displayFlex(row, center);
+			box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+			font-size: 2rem;
+			font-weight: 600;
+			margin: 4rem 1rem 1rem;
+			height: 10rem;
+			width: 90%;
+
+			transition: all 0.1s ease-in-out;
+		}
+
+		&:hover {
+			.Techstack__item {
+				transform: scale(1.05);
+				background-color: rgb(255, 184, 184);
+				box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+					rgba(0, 0, 0, 0.22) 0px 15px 12px;
+			}
+			.Techstack__item-pin {
+				transform: scale(1.1);
+			}
+		}
+	}
+
+	.Techstack__item-container--selected {
+		.Techstack__item {
+			background-color: orange;
+			color: white;
+		}
+
+		&:hover {
+			.Techstack__item {
+				background-color: rgb(226, 232, 124);
+			}
+		}
+	}
+}
+
+.Techstack__load-btn {
+	margin: 3rem 0;
+	font-size: 2.5rem !important;
+}

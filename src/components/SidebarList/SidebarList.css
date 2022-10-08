@@ -1,0 +1,31 @@
+.SidebarList {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+  gap: 1.5rem;
+}
+.SidebarList .SidebarItem {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 1rem;
+  align-items: center;
+}
+.SidebarList .SidebarItem svg {
+  cursor: pointer;
+}
+.SidebarList .SidebarItem .SidebarItem__label {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.SidebarList--collapse {
+  padding-left: 0;
+  padding-top: 1.5rem;
+}
+.SidebarList--collapse .SidebarItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=SidebarList.css.map */

@@ -1,0 +1,59 @@
+.Sidebar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  padding: 0;
+  width: 20rem;
+  height: 100%;
+  padding-top: 3rem;
+  color: white;
+  z-index: 100;
+}
+.Sidebar .Sidebar__background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-color: rgb(39, 38, 38);
+  opacity: 0.9;
+}
+.Sidebar .Sidebar__block {
+  display: flex;
+  flex-direction: column;
+  z-index: 111;
+}
+
+.Sidebar--collapse {
+  width: 5rem;
+}
+
+.Sidebar__user-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.Sidebar__user-container .Sidebar__profile-pic {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 3px solid yellow;
+}
+.Sidebar__user-container .Sidebar__user-name {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.Sidebar__collapsible {
+  align-self: flex-end;
+}
+.Sidebar__collapsible .Sidebar__collapse-btn {
+  font-size: 2rem;
+  background-color: #413f3f;
+  padding: 0.5rem 0.9rem;
+  cursor: pointer;
+}/*# sourceMappingURL=Sidebar.css.map */

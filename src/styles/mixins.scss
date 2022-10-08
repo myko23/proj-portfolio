@@ -1,0 +1,22 @@
+@mixin boxSize($size, $circle: false) {
+	height: $size;
+	width: $size;
+	@if ($circle) {
+		border-radius: 50%;
+	}
+}
+
+@mixin displayFlex($direction: row, $center: false) {
+	display: flex;
+	flex-direction: $direction;
+
+	@if ($center) {
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@mixin fitBox {
+	height: 100%;
+	width: 100%;
+}

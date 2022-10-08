@@ -1,0 +1,94 @@
+@use "../../styles" as *;
+
+.Home {
+	background-color: $darkColor;
+	height: 30rem;
+	color: white;
+	.Home__container {
+		height: 100%;
+	}
+}
+
+.Home__content {
+	@include displayFlex(column);
+	height: 100%;
+	line-height: 3rem;
+
+	padding-top: 15rem;
+	margin-left: 13rem;
+
+	.Home__greetings {
+		font-size: 4rem;
+	}
+	.Typewriter {
+		font-size: 2rem;
+		color: yellow;
+	}
+}
+
+.Home__btn-container {
+	@include displayFlex(row);
+	gap: 1rem;
+	margin-top: 2rem;
+	.Home__btn {
+		@include displayFlex(row, true);
+		white-space: nowrap;
+		background-color: orange;
+		text-transform: uppercase;
+		border-radius: 2rem;
+		padding: 0.1rem 0;
+		font-size: 1.5rem;
+		width: 15rem;
+		cursor: pointer;
+		transition: all 0.1s ease-in-out;
+
+		a {
+			color: white;
+
+			&:hover {
+				color: black;
+			}
+		}
+
+		&:hover {
+			transform: scale(1.05);
+			background-color: white;
+			color: black;
+			font-weight: bold;
+		}
+	}
+}
+
+@media (max-width: $md) {
+	.Home__content {
+		padding-top: 4rem;
+		margin-left: 5rem;
+	}
+	.Home__btn-container {
+		margin-top: 1rem;
+		.Home__btn {
+			font-size: 1.3rem;
+			width: 12rem;
+		}
+	}
+	.Home {
+		height: 16rem;
+	}
+}
+
+@media (max-width: $xl) {
+	.Home__content {
+		padding-top: 4rem;
+		margin-left: 3rem;
+	}
+	.Home__btn-container {
+		margin-top: 1rem;
+		.Home__btn {
+			font-size: 1.3rem;
+			width: 12rem;
+		}
+	}
+	.Home {
+		height: 16rem;
+	}
+}

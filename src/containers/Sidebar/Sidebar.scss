@@ -1,0 +1,55 @@
+@use "../../styles" as *;
+
+.Sidebar {
+	@include displayFlex(column);
+	position: fixed;
+	left: 0;
+	padding: 0;
+
+	width: 20rem;
+	height: 100%;
+	padding-top: 3rem;
+	color: white;
+	z-index: 100;
+	.Sidebar__background {
+		position: absolute;
+		@include fitBox();
+		top: 0;
+		background-color: $darkColor;
+		opacity: 0.9;
+	}
+
+	.Sidebar__block {
+		@include displayFlex(column);
+		z-index: 111;
+	}
+}
+
+.Sidebar--collapse {
+	width: 5rem;
+}
+
+.Sidebar__user-container {
+	@include displayFlex(column, true);
+	width: 100%;
+
+	.Sidebar__profile-pic {
+		@include boxSize(10rem, true);
+		object-fit: cover;
+		border: 3px solid yellow;
+	}
+	.Sidebar__user-name {
+		font-size: 1.5rem;
+		text-transform: uppercase;
+	}
+}
+.Sidebar__collapsible {
+	align-self: flex-end;
+
+	.Sidebar__collapse-btn {
+		font-size: 2rem;
+		background-color: lighten($darkColor, 10%);
+		padding: 0.5rem 0.9rem;
+		cursor: pointer;
+	}
+}

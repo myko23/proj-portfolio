@@ -1,0 +1,91 @@
+.Home {
+  background-color: rgb(39, 38, 38);
+  height: 30rem;
+  color: white;
+}
+.Home .Home__container {
+  height: 100%;
+}
+
+.Home__content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  line-height: 3rem;
+  padding-top: 15rem;
+  margin-left: 13rem;
+}
+.Home__content .Home__greetings {
+  font-size: 4rem;
+}
+.Home__content .Typewriter {
+  font-size: 2rem;
+  color: yellow;
+}
+
+.Home__btn-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.Home__btn-container .Home__btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  background-color: orange;
+  text-transform: uppercase;
+  border-radius: 2rem;
+  padding: 0.1rem 0;
+  font-size: 1.5rem;
+  width: 15rem;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+.Home__btn-container .Home__btn a {
+  color: white;
+}
+.Home__btn-container .Home__btn a:hover {
+  color: black;
+}
+.Home__btn-container .Home__btn:hover {
+  transform: scale(1.05);
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+@media (max-width: 576px) {
+  .Home__content {
+    padding-top: 4rem;
+    margin-left: 5rem;
+  }
+  .Home__btn-container {
+    margin-top: 1rem;
+  }
+  .Home__btn-container .Home__btn {
+    font-size: 1.3rem;
+    width: 12rem;
+  }
+  .Home {
+    height: 16rem;
+  }
+}
+@media (max-width: 992px) {
+  .Home__content {
+    padding-top: 4rem;
+    margin-left: 3rem;
+  }
+  .Home__btn-container {
+    margin-top: 1rem;
+  }
+  .Home__btn-container .Home__btn {
+    font-size: 1.3rem;
+    width: 12rem;
+  }
+  .Home {
+    height: 16rem;
+  }
+}/*# sourceMappingURL=Home.css.map */

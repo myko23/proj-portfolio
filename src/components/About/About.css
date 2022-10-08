@@ -1,0 +1,50 @@
+.About {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  width: 80%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 3rem 2rem;
+  margin-top: 2rem;
+  overflow: hidden;
+}
+
+.About__pic-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.About__pic-container .About__profile-pic {
+  height: 25rem;
+  width: 25rem;
+  border-radius: 50%;
+  border: 3px solid black;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.About__details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.About__details .About__title {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 600;
+  border-bottom: 2px solid black;
+}
+.About__details .About__description {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .About {
+    padding: 4rem;
+  }
+}/*# sourceMappingURL=About.css.map */

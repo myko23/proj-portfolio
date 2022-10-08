@@ -21,9 +21,7 @@ function Home() {
 					<div className="Home__btn-container">
 						<div className="Home__btn">Hire Me</div>
 						<div className="Home__btn">
-							<a href={Resume} download="Bacal CV">
-								Get My resume
-							</a>
+							<a download="Bacal CV">Get My resume</a>
 						</div>
 					</div>
 				</div>

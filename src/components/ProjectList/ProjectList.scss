@@ -1,0 +1,86 @@
+@use "../../styles" as *;
+
+.ProjectList__item {
+	@include displayFlex(column);
+	margin-bottom: 2rem;
+	width: 45rem;
+
+	.ProjectCard {
+		background-color: white;
+		border-radius: 1rem;
+		margin: 1rem;
+		box-shadow: $shadow;
+
+		&:hover {
+			color: dodgerblue;
+			.ProjectCard__name-container {
+				border-bottom: 1px solid dodgerblue;
+				color: dodgerblue;
+			}
+			.ProjectCard__tech-container {
+				.ProjectCard__tech {
+					border: 1px solid dodgerblue;
+				}
+			}
+			.ProjectCard__link-container {
+				background-color: dodgerblue;
+			}
+		}
+
+		.ProjectCard__name-container {
+			@include displayFlex(row);
+			justify-content: space-between;
+			align-items: center;
+			padding: 0.3rem 2rem;
+			cursor: pointer;
+			border-bottom: 1px solid black;
+			color: black;
+
+			.ProjectCard__name {
+				font-size: 2.5rem;
+				font-weight: 1000;
+			}
+			.ProjectCard__name-chev {
+				font-size: 2rem;
+			}
+		}
+
+		.ProjectCard__description-container {
+			padding: 1rem 2rem;
+			font-size: 1.5rem;
+		}
+
+		.ProjectCard__tech-container {
+			@include displayFlex(row);
+			gap: 1rem;
+			padding: 1rem 2rem;
+
+			.ProjectCard__tech {
+				border: 1px solid black;
+				width: fit-content;
+				padding: 0.5rem;
+				border-radius: 1rem;
+				font-weight: bold;
+			}
+		}
+
+		.ProjectCard__description-container--collapse {
+			height: 0;
+			overflow: hidden;
+			padding: 0;
+		}
+
+		.ProjectCard__link-container {
+			@include displayFlex(row, true);
+			padding: 0.5rem;
+			background-color: black;
+			border-radius: 0 0 1rem 1rem;
+			.ProjectCard__link {
+				color: white;
+				text-transform: uppercase;
+				font-size: 1.8rem;
+				font-weight: 1000;
+			}
+		}
+	}
+}

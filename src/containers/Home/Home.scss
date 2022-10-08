@@ -2,7 +2,6 @@
 
 .Home {
 	background-color: $darkColor;
-	height: 30rem;
 	color: white;
 	.Home__container {
 		height: 100%;
@@ -13,10 +12,7 @@
 	@include displayFlex(column);
 	height: 100%;
 	line-height: 3rem;
-
-	padding-top: 15rem;
-	margin-left: 13rem;
-
+	margin: 10% 0 2%;
 	.Home__greetings {
 		font-size: 4rem;
 	}
@@ -60,35 +56,21 @@
 }
 
 @media (max-width: $md) {
-	.Home__content {
-		padding-top: 4rem;
-		margin-left: 5rem;
-	}
 	.Home__btn-container {
 		margin-top: 1rem;
 		.Home__btn {
 			font-size: 1.3rem;
 			width: 12rem;
 		}
-	}
-	.Home {
-		height: 16rem;
 	}
 }
 
 @media (max-width: $xl) {
-	.Home__content {
-		padding-top: 4rem;
-		margin-left: 3rem;
-	}
 	.Home__btn-container {
 		margin-top: 1rem;
 		.Home__btn {
 			font-size: 1.3rem;
 			width: 12rem;
 		}
-	}
-	.Home {
-		height: 16rem;
 	}
 }

@@ -1,0 +1,24 @@
+.WorkHistory {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.WorkHistory__timeline {
+  height: 100%;
+  width: 100%;
+  line-height: 2rem;
+}
+.WorkHistory__timeline .WorkHistory__name {
+  font-weight: 1000;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+.WorkHistory__timeline .WorkHistory__title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.WorkHistory__timeline .WorkHistory__description {
+  line-height: normal;
+  font-size: 1.4rem;
+}/*# sourceMappingURL=WorkHistory.css.map */

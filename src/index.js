@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import App from "./containers/app/App";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "react-vertical-timeline-component/style.min.css";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

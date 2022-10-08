@@ -5,10 +5,9 @@
 	background-color: white;
 	width: 80%;
 	height: fit-content;
-	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	box-shadow: $shadow;
 	padding: 3rem 2rem;
 	margin-top: 2rem;
-	overflow: hidden;
 }
 .About__pic-container {
 	@include displayFlex(column, true);

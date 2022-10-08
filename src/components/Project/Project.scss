@@ -1,0 +1,6 @@
+@use "../../styles" as *;
+
+.Project {
+	@include displayFlex(column);
+	align-items: center;
+}

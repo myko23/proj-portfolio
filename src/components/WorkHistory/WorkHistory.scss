@@ -1,0 +1,25 @@
+@use "../../styles" as *;
+
+.WorkHistory {
+	@include displayFlex(column);
+	align-items: center;
+}
+
+.WorkHistory__timeline {
+	@include fitBox();
+	line-height: 2rem;
+
+	.WorkHistory__name {
+		font-weight: 1000;
+		text-transform: uppercase;
+		font-size: 2.5rem;
+	}
+	.WorkHistory__title {
+		font-size: 1.5rem;
+		margin-bottom: 1.5rem;
+	}
+	.WorkHistory__description {
+		line-height: normal;
+		font-size: 1.4rem;
+	}
+}

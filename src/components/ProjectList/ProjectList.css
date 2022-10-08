@@ -1,0 +1,81 @@
+.ProjectList__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  width: 45rem;
+}
+.ProjectList__item .ProjectCard {
+  background-color: white;
+  border-radius: 1rem;
+  margin: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.ProjectList__item .ProjectCard:hover {
+  color: dodgerblue;
+}
+.ProjectList__item .ProjectCard:hover .ProjectCard__name-container {
+  border-bottom: 1px solid dodgerblue;
+  color: dodgerblue;
+}
+.ProjectList__item .ProjectCard:hover .ProjectCard__tech-container .ProjectCard__tech {
+  border: 1px solid dodgerblue;
+}
+.ProjectList__item .ProjectCard:hover .ProjectCard__link-container {
+  background-color: dodgerblue;
+}
+.ProjectList__item .ProjectCard .ProjectCard__name-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 2rem;
+  cursor: pointer;
+  border-bottom: 1px solid black;
+  color: black;
+}
+.ProjectList__item .ProjectCard .ProjectCard__name-container .ProjectCard__name {
+  font-size: 2.5rem;
+  font-weight: 1000;
+}
+.ProjectList__item .ProjectCard .ProjectCard__name-container .ProjectCard__name-chev {
+  font-size: 2rem;
+}
+.ProjectList__item .ProjectCard .ProjectCard__description-container {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+}
+.ProjectList__item .ProjectCard .ProjectCard__tech-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 1rem 2rem;
+}
+.ProjectList__item .ProjectCard .ProjectCard__tech-container .ProjectCard__tech {
+  border: 1px solid black;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-weight: bold;
+}
+.ProjectList__item .ProjectCard .ProjectCard__description-container--collapse {
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+}
+.ProjectList__item .ProjectCard .ProjectCard__link-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: black;
+  border-radius: 0 0 1rem 1rem;
+}
+.ProjectList__item .ProjectCard .ProjectCard__link-container .ProjectCard__link {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 1000;
+}/*# sourceMappingURL=ProjectList.css.map */

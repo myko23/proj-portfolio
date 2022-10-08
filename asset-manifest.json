@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/proj-portfolio/static/css/main.2b82f62a.css",
+    "main.js": "/proj-portfolio/static/js/main.aff9cd29.js",
+    "static/js/787.466f53da.chunk.js": "/proj-portfolio/static/js/787.466f53da.chunk.js",
+    "static/media/profile-pic.png": "/proj-portfolio/static/media/profile-pic.b36979894fc88376a772.png",
+    "static/media/Meg Franco Bacal CV.pdf": "/proj-portfolio/static/media/Meg Franco Bacal CV.91dcdf1e95c8336a588f.pdf",
+    "index.html": "/proj-portfolio/index.html",
+    "main.2b82f62a.css.map": "/proj-portfolio/static/css/main.2b82f62a.css.map",
+    "main.aff9cd29.js.map": "/proj-portfolio/static/js/main.aff9cd29.js.map",
+    "787.466f53da.chunk.js.map": "/proj-portfolio/static/js/787.466f53da.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2b82f62a.css",
+    "static/js/main.aff9cd29.js"
+  ]
+}
